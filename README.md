@@ -18,7 +18,7 @@ This project can be used for:
   - Uploading interactive games for learning;
   - Uploading graph using Google API;
 
-Web Site Screens:
+Website Screens:
 
 ![image](https://user-images.githubusercontent.com/52401139/134638123-93e2552d-8534-4427-9fc9-35d7f9453f3b.png)
 ![image](https://user-images.githubusercontent.com/52401139/134638180-d8184c68-eb4b-4a07-ae86-5a552bf14180.png)
