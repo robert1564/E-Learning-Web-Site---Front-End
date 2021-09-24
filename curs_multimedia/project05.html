@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="agency, business, corporate, creative, freelancer, interior, minimal, modern, multipurpose, personal, portfolio, responsive, simple" />
+        <meta name="description" content="ajax portfolio one page" />
+        <meta name="author" content="cosmos-themes" />
+
+        <!--PAGE TITLE-->
+        <title>Curs Multimedia</title>
+
+        <link rel="icon" type="image/ico" href="images/favicon.ico" />
+
+        <!--Plugins Css-->
+        <link rel="stylesheet" href="css/plugins.css">
+        <!--Main Style Css-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--Modernizr Js-->
+        <script src="js/modernizr.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122650090-5"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-122650090-5');
+        </script>
+
+    </head>
+    <body class="smooth-scroll">
+
+        <!--PRELOADER START-->
+        <div class="preloader">
+            <div class="loader-wrap">
+                <div class="loader">
+                    <div class="loader-percent"></div>
+                </div>
+                <div id="percent">0%</div>
+            </div>
+        </div>
+        <!--PRELOADER END-->
+
+        <!--MAIN START-->
+        <div id="main">
+            <div class="ct-main-content ct-index">
+
+                <!--HEADER START-->
+                <header>
+                    <div class="logo-container">
+                        <a href="index.html" id="logo" class="cursor-link" data-type="page-transition">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="menu-burger">
+                        <div class="parallax-wrap burger-wrap">
+                            <div class="parallax-icon">
+                                <div class="burger-box">
+                                    <div class="burger-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="burger-text">
+                            <div class="text-menu">MENU</div>
+                            <div class="text-open">OPEN</div>
+                            <div class="text-close">CLOSE</div>
+                        </div>
+
+                    </div>
+
+                </header>
+                <!--HEADER END-->
+
+                <!--MENU OVERLAY START-->
+                <div id="menu-overlay">
+                    <div class="container">
+                        <div class="content-wrapper">
+                            <nav class="primary-nav">
+                                <ul>
+                                    <li><a href="index.html" class="menu-link cursor-link" data-type="page-transition">Index</a></li>
+                                    <li><a href="contact.html" class="menu-link cursor-link" data-type="page-transition">Contact</a></li>
+                                    
+                                </ul>
+                            </nav>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--MENU OVERLAY END-->
+
+                <!--SCROLL CONTENT START-->
+                <div id="scroll-content">
+
+                    <!--PAGE CONTENT START-->
+                    <div class="page-content">
+
+                        <!--PROJECT HERO SECTION START-->
+                        <div class="project-hero">
+
+                            <!--PROJECT HERO BACKGROUND IMAGE-->
+                            <div class="hero-image-wrapper">
+                                <div class="hero-bg-image" style="background-image: url('images/projects/project5/1.png')"></div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="hero-content">
+                                            <div class="hero-inner">
+                                                <div class="project-subtitle">Cod Design - Javascript</div>
+                                                <div class="project-title">Implementare cod</div>
+                                            </div>
+                                            <div id="scroll-down" class="btn-down cursor-hide">
+                                                <div class="icon-scroll"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--PROJECT HERO SECTION END-->
+
+                        <!--PROJECT INFO START-->
+                        <div class="project-info pt-row pb-row">
+                            <div class="container">
+
+                                <!--PROJECT SERVICES-->
+                                <div class="row project-services">
+                                    <div class="col-md-3">
+                                        <h4 class="project-sectionTitle fade-up">Cuvinte cheie</h4>
+
+                                        <!--PROJECT SERVICES LIST-->
+                                        <ul class="project-servicesList">
+                                            <li class="fade-up" data-delay="10">Javascript</li>
+                                            <li class="fade-up" data-delay="30">Cod Design</li>
+                                            <li class="fade-up" data-delay="50">Complet</li>
+                                        </ul>
+                                    </div>
+
+                                    <!--PROJECT SUMMARY-->
+                                    <div class="col-md-9">
+                                        <h4 class="project-sectionTitle fade-up">Sumar</h4>
+                                        <p class="fade-up" data-delay="50">Conceptul suplimentar folosit, in implementarea JS, a fost cautarea in adancime.<p> 
+                                                                           1. Am dat nodul curent drept parametru <br>
+                                                                           2. Marcarea nodului curent drept vizitat <br>
+                                                                           3. Pentru fiecare margine din nodul curent - un nou nod N
+                                                                           <div class="e">a. Daca noul nod N nu a fost vizitat<br></div>
+                                                                           <div class="e">b. Invoca aceasta rutina recursiv pentru noul nod N</div><br><p>
+                                                                           Cautarea in adancime poate fi activata de la orice nod de pornire din graf.<br>
+                                                                           Algoritmul de cautare in adancime l-am implementat folosind backtracking: <br>
+                                                                           1. Dau prima celula drept parametru. <br>
+                                                                           2. Marchez celula curenta drept vizitata <br>
+                                                                           3. Cat timp celula curenta are orice celula vecina nevizitata
+                                                                           <div class="e">a. Alege una din celulele nevizitate<br></div>
+                                                                           <div class="e">b. Anuleaza orice perete dintre celula curenta si cea aleasa<br></div>
+                                                                           <div class="e">c. Invoca aceasta rutina recursiv pentru celula aleasa<br></div>
+                                                                           
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!--PROJECT PERIOD-->
+                                <div class="row project-period mt-40">
+                                    <div class="col-md-3">
+                                        <h4 class="project-sectionTitle fade-up">Perioda</h4>
+                                        <p class="fade-up" data-delay="50">Nov 2020 - 2021</p>
+                                    </div>
+
+                                    <!--PROJECT WEBSITE LINK-->
+                                    <div class="col-md-9">
+                                        <a href="fisiere/maze_exp.pdf" target="_blank" class="link-underline cursor-link fade-up" data-delay="0">Explicatia completa</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--PROJECT INFO END-->
+
+                        <!--PROJECT FULL PARALLAX IMAGE START-->
+                        <div class="project-image">
+                            <div class="project-image--full bg-parallax fade-up">
+                                <img src="images/projects/project5/2.png" alt="">
+                            </div>
+                        </div>
+                        <!--PROJECT FULL PARALLAX IMAGE END-->
+
+                        <!--PROJECT INTRO START-->
+                        <div class="project-intro pt-row pb-row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1">
+                                        <h3 class="text-center text-animate text-fadeIn fade-up">Imaginați-vă că mergeți în pădure, mergeți pe o potecă și se despică în două, astfel încât să puteți alege să mergeți la dreapta 
+                                                                                                 sau la stânga, dar nu ambele. Dacă utilizați o căutare în adancime, ați alege întotdeauna să mergeți într-un singur sens.
+                                                                                                 Să spun că alegeți întotdeauna să mergeți la dreapta și urmați calea și aceasta se despică din nou și din nou, alegeți să mergeți 
+                                                                                                 la dreapta, până când ajungeți într-o fundătură și în acel moment reveniți și verificați cealaltă opțiune pentru a verifica drumul 
+                                                                                                 care nu este parcurs, punctul este că urmați calea la fel de adânc pe cât merge.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--PROJECT INTRO END-->
+
+                        <!--PROJECT IMAGES START-->
+                        <div class="project-images link-popup">
+                            <div class="container">
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="images/projects/project5/3.png" class="image-link fade-up">
+                                            <img src="images/projects/project5/3.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="images/projects/project5/4.png" class="image-link fade-up">
+                                            <img src="images/projects/project5/4.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--PROJECT IMAGES END-->
+
+
+                        <!--NEXT PROJECT LINK START-->
+                        <div class="next-project pt-row pb-row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="next-subtitle fade-up">Next</div>
+                                        <div class="next-title fade-up"><a href="project01.html" class="cursor-link link-underline" data-type="page-transition">Backtracking</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--NEXT PROJECT LINK END-->
+
+                    </div>
+                    <!--PAGE CONTENT END-->
+
+                    <!--FOOTER START-->
+                    <footer>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="copyright-text">
+                                        <p>&copy; 2020. All Right Reserved.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="scroll-top" class="back-top">
+                                        <span>Back To Top</span>
+                                        <div class="arrow-up">
+                                            <div class="parallax-wrap">
+                                                <div class="parallax-icon">
+                                                    <img src="https://img.icons8.com/fluent/48/000000/up.png"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </footer>
+                    <!--FOOTER END-->
+
+                </div>
+                <!--SCROLL CONTENT END-->
+
+            </div>
+        </div>
+        <!--MAIN END-->
+
+        <!--AJAX PRELOADER START-->
+        <div class="ajax-preloader">
+            <div class="loading"></div>
+        </div>
+        <!--AJAX PRELOADER END-->
+
+        <!--CUSTOM CURSOR START-->
+        <div id="custom-cursor">
+            <div id="cursor-outer">
+                <div id="cursor-loading"></div>
+            </div>
+
+            <div id="cursor-inner"></div>
+        </div>
+        <!--CUSTOM CURSOR END-->
+
+
+
+        <!--Jquery JS-->
+        <script src="js/jquery.min.js"></script>
+        <!--Plugins JS-->
+        <script src="js/plugins.min.js"></script>
+        <!--Google Map Api-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUU5FZiF5WLFFfgIC1n64Zr0zfpQZjBBg"></script>
+        <!--Site Main JS-->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
