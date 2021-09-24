@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart</title>
+    <link rel="stylesheet" href="chartStyle.css" >
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          ['Ani', 'C++', 'Java', 'C#', 'JavaScript', 'Python', 'Medie'],
+          ['2016',  75,      251,         91,             227,           174,      163.6],
+          ['2017',  70,      241,         88,             223,           203,      165],
+          ['2018',  68,      231,         85,             231,           226,      168.2],
+          ['2019',  66,      223,         84,             224,           242,      167.8],
+          ['2020',  65,      221,         83,             237,           268,      174.8]
+        ]);
+
+        var options = {
+          title : 'Cele mai utilizate limbaje de programare',
+          vAxis: {title: 'Scor'},
+          hAxis: {title: 'Ani'},
+          seriesType: 'bars',
+          series: {5: {type: 'line'}}
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+</head>
+<body>
+    <!-- NAVIGATION -->
+<header>
+    <div class="nav" id="nav">
+        <div id="learned-logo">
+        <a href="../index.html"><h1><span style="color: crimson">i</span>Learn</h1></a></div>
+        <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+        <ul id="list-switch">
+            <li><a href="../curs_multimedia/index.html"><img src="https://img.icons8.com/dusk/64/000000/multimedia-publishing.png"/>Curs Multimedia</a></li>
+            <li><a href="video.html"><img src="https://img.icons8.com/dusk/64/000000/video.png"/>Video</a></li>
+            <li><a href="maze.html"><img src="https://img.icons8.com/cotton/64/000000/labyrinth.png"/>Simulare JS </a></li>
+            <li><a href="game.html"><img src="https://img.icons8.com/offices/30/000000/year-of-rat.png" class="icon">Joc interactiv</a></li>
+            <li><a href="quiz.html"><img src="https://img.icons8.com/dusk/64/000000/questions.png"/>Quiz</a></li>
+            <li><a href="chart.html"><img src="https://img.icons8.com/dusk/64/000000/chart.png"/>Grafic</a></li>
+        </ul>
+        <div class="search" id="search-switch">
+            <input type="search" placeholder="Cauta" class="srch"><button id="srchbtn"><img src="images/icon/search.png"></button>
+        </div>
+    </div>
+</header>
+
+    <div id="chart_div" style="width: 1100px; height: 750px; margin: auto;"></div>
+</body>
+</html>

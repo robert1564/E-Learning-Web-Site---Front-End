@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joc interactiv</title>
+    <link rel="stylesheet" href="gameStyle.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <div class="nav" id="nav">
+        <div id="learned-logo">
+        <a href="../index.html"><h1><span style="color: crimson">i</span>Learn</h1></a></div>
+        <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+        <ul id="list-switch">
+            <li><a href="../curs_multimedia/index.html"><img src="https://img.icons8.com/dusk/64/000000/multimedia-publishing.png"/>Curs Multimedia</a></li>
+            <li><a href="video.html"><img src="https://img.icons8.com/dusk/64/000000/video.png"/>Video</a></li>
+            <li><a href="maze.html"><img src="https://img.icons8.com/cotton/64/000000/labyrinth.png"/>Simulare JS </a></li>
+            <li><a href="game.html"><img src="https://img.icons8.com/offices/30/000000/year-of-rat.png" class="icon">Joc interactiv</a></li>
+            <li><a href="quiz.html"><img src="https://img.icons8.com/dusk/64/000000/questions.png"/>Quiz</a></li>
+            <li><a href="chart.html"><img src="https://img.icons8.com/dusk/64/000000/chart.png"/>Grafic</a></li>
+        </ul>
+        <div class="search" id="search-switch">
+            <input type="search" placeholder="Cauta" class="srch"><button id="srchbtn"><img src="images/icon/search.png"></button>
+        </div>
+    </div>
+</header>
+    
+    <div style="padding-top:80px;">
+        <p>
+            <b>Cum se joaca?<br></b>
+            1. Se alege cate lini si coloane vrem sa avem in labirint<br>
+            2. Click stanga pentru a adauga pereti<br>
+            3. Primul click rotita - Selecteaza punctul de pornire(patrat rosu)<br>
+            4. Al doilea click rotita - Selecteaza punctul de sosire(patrat verde)<br>
+        </p>
+    </div>
+
+    <div id="canvas-div" style="width: 500px; margin: auto;">
+        <canvas id="canvas" width="500px" height="500px"></canvas>
+    </div>
+
+    <div  id="controls" style="padding:10px; width: 350px; margin: auto;">
+        <input type="number" name="" id="rows" placeholder="Linii" >
+        <input type="number" name="" id="cols" placeholder="Coloane"><br><br>
+        <button onclick="genGrid()">Genereaza<p> Grila</button>
+        <button onclick="solve()">Rezolva <p>Labrint</button><br><br>
+    </div>
+   
+    
+
+</body>
+<script src="gameScript.js"></script>
+</html>

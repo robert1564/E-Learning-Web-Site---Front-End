@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="quizStyle.css">
+	<script type="text/javascript" src="../script.js"></script>
+</head>
+<body>
+	
+<!-- NAVIGATION -->
+<header>
+    <div class="nav" id="nav">
+        <div id="learned-logo">
+        <a href="../index.html"><h1><span style="color: crimson">i</span>Learn</h1></a></div>
+        <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="images/icon/menu.png"></div>
+        <ul id="list-switch">
+            
+            <li><a href="../curs_multimedia/index.html"><img src="https://img.icons8.com/dusk/64/000000/multimedia-publishing.png"/>Curs Multimedia</a></li>
+            <li><a href="video.html"><img src="https://img.icons8.com/dusk/64/000000/video.png"/>Video</a></li>
+			<li><a href="maze.html"><img src="https://img.icons8.com/cotton/64/000000/labyrinth.png"/>Simulare JS </a></li>
+			<li><a href="game.html"><img src="https://img.icons8.com/offices/30/000000/year-of-rat.png" class="icon">Joc interactiv</a></li>
+			<li><a href="quiz.html"><img src="https://img.icons8.com/dusk/64/000000/questions.png"/>Quiz</a></li>
+			<li><a href="chart.html"><img src="https://img.icons8.com/dusk/64/000000/chart.png"/>Grafic</a></li>
+        </ul>
+        <div class="search" id="search-switch">
+            <input type="search" placeholder="Cauta" class="srch"><button id="srchbtn"><img src="images/icon/search.png"></button>
+        </div>
+    </div>
+</header>
+	
+
+<!-- MAIN Heading of Page -->
+	<div class="title" id="title">
+		<span>Quiz-ul zilnic</span>
+		<div class="shortdesc"><br>
+			<p>Daca crezi ca educatia este costisitoare, incearca ignoranta.</p>
+		</div>
+		<button onclick="startquiz()">Start</button>
+	</div>
+
+
+<div class="panel" id="panel">
+	<div class="left-side" id="left">
+		<ul>
+			<li onclick="quizt(1)">ACASA</li>
+			<li onclick="quizt(2)">Explicarea codului / Pseudocod</li>
+			<li onclick="quizt(3)">Java</li>
+			<li onclick="quizt(4)">JavaScript</li>
+			<li onclick="quizt(5)">Intrebari interviu</li>
+		</ul>
+	</div>
+	<div class="right-side" id="right">
+		<div id="quiz-container">
+			<div id="f1"><div class="quiz-frame main-frame"></div></div>
+
+			<div id="f2"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSc3QFyL0Yj0F1NpYRP7vOx7EPdTCqBmMRl4gHsVco8Fko7B_w/viewform?usp=sf_link" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+			
+			<div id="f3"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSe90HbLat9a8wJ5k-gz_Pl7mcou-bPrKTMf90FLmcCE1baRaQ/viewform?usp=sf_link" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+			
+			<div id="f4"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSeQW5vxiyujKwOxsJNoovBpBKCo2ioR-q3zmxMtb6w3Goxx2Q/viewform?usp=sf_link" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+			<div id="f5"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLScJ6yZsPLyu-oLwrKf6huwwXzVpsjT9Km__87r7xAYSyhpmKQ/viewform?usp=sf_link"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></iframe></div>
+				
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>
